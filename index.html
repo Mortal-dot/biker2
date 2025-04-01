@@ -23,89 +23,93 @@
 </head>
 
 <body class="body">
-    <div class="container-fluid pt-5">
-        <div class="row pt-5">
-            <header class="navbar navbar-expand-md navbar-light dark_color fixed-top"> 
-                <div class="container-fluid d-flex justify-content-between align-items-center">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="Imagenes/logotipo.jpg" alt="Logotipo" height="100" width="100">
-                        <h1 class="ms-2 mb-0 text-light hx_font">Professional Biker’s</h1>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="Imagenes/iconos/326618_form_icon.png" alt="Menú" width="30" height="30">
-                    </button>
-                    <div class="collapse navbar-collapse text-light" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item hx_font" href="productos.html#juegos">Juegos</a></li>
-                                    <li><a class="dropdown-item hx_font" href="productos.html#ediciones">Ediciones coleccionistas</a></li>
-                                    <li><a class="dropdown-item hx_font" href="productos.html#merchandising">Merchandising</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#" id="cart-icon"><img src="Imagenes/iconos/326700_cart_shopping_icon.png" alt="carrito"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="contacto.html"><img src="Imagenes/iconos/326670_mail_icon.png" alt="contactanos"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="SobreNosotros.html"><img src="Imagenes/iconos/326659_info_icon (1).png" alt="nosotros"></a>
-                            </li>
-                        </ul>
+    <!-- Header Section -->
+    <div class="header-section">
+        <div class="container-fluid pt-5">
+            <div class="row pt-5">
+                <header class="navbar navbar-expand-md navbar-light dark_color fixed-top"> 
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="Imagenes/logotipo.jpg" alt="Logotipo" height="100" width="100">
+                            <h1 class="ms-2 mb-0 text-light hx_font">Professional Biker’s</h1>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="Imagenes/iconos/326618_form_icon.png" alt="Menú" width="30" height="30">
+                        </button>
+                        <div class="collapse navbar-collapse text-light" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Productos
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item hx_font" href="productos.html#juegos">Juegos</a></li>
+                                        <li><a class="dropdown-item hx_font" href="productos.html#ediciones">Ediciones coleccionistas</a></li>
+                                        <li><a class="dropdown-item hx_font" href="productos.html#merchandising">Merchandising</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#" id="cart-icon"><img src="Imagenes/iconos/326700_cart_shopping_icon.png" alt="carrito"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="contacto.html"><img src="Imagenes/iconos/326670_mail_icon.png" alt="contactanos"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="SobreNosotros.html"><img src="Imagenes/iconos/326659_info_icon (1).png" alt="nosotros"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="cart" class="cart-container" style="display:none;">
+                            <h2 class="cart_h2">Carrito de Compras</h2>
+                            <ul id="cart-items" class="cart_ul"></ul>
+                            <button class="cart_button" id="checkout-btn">Pagar</button>
+                            <button class="cart_button" id="clear-cart">Vaciar Carrito</button>
+                        </div>
+                        <div id="checkout-form-container" style="display: none; margin-top: 20px;">
+                            <h3 class="cart_h2">Detalles de Compra</h3>
+                            <form id="checkout-form">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required pattern="[A-Za-záéíóúÁÉÍÓÚÑñ ]+" title="Solo letras son permitidas" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="card" class="form-label">Tarjeta</label>
+                                    <input type="text" class="form-control" id="card" placeholder="Número de tarjeta" maxlength="16" required pattern="^\d{16}$" title="El número de tarjeta debe ser de 16 dígitos" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Dirección completa" required />
+                                </div>
+                                <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                            </form>
+                        </div>
                     </div>
-                    <div id="cart" class="cart-container" style="display:none;">
-                        <h2 class="cart_h2">Carrito de Compras</h2>
-                        <ul id="cart-items" class="cart_ul" ></ul>
-                        <button class="cart_button" id="checkout-btn">Pagar</button>
-                        <button class="cart_button"id="clear-cart">Vaciar Carrito</button>
-                    </div>
-                    <div id="checkout-form-container" style="display: none; margin-top: 20px;">
-                        <h3 class="cart_h2">Detalles de Compra</h3>
-                        <form id="checkout-form">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required 
-                                       pattern="[A-Za-záéíóúÁÉÍÓÚÑñ ]+" title="Solo letras son permitidas" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="card" class="form-label">Tarjeta</label>
-                                <input type="text" class="form-control" id="card" placeholder="Número de tarjeta" maxlength="16" required 
-                                       pattern="^\d{16}$" title="El número de tarjeta debe ser de 16 dígitos" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Dirección</label>
-                                <input type="text" class="form-control" id="address" placeholder="Dirección completa" required />
-                            </div>
-                            <button type="submit" class="btn btn-primary">Confirmar Compra</button>
-                        </form>
-                    </div>
-                </div>
-            </header>
+                </header>
+            </div>
         </div>
-    </div>
-</section>
- <!--carousel-->
-<div class="owl-carousel owl-theme container-fluid pt-3 px-5 pt-5">
-    <div class="item">
-        <a href="productos.html#ediciones">
-            <img src="Imagenes/productos/ce/SLIDER-elden-ring-shadow-of-the-erdtree-edition-collector-et-standard-article-blog-1024x614.jpg" alt="" class="img-fluid">
-        </a>
-    </div>
-    <div class="item">
-        <a href="productos.html#ediciones">
-            <img src="Imagenes/productos/ce/SLIDER-persona-3-reload-collector-aigis-v1.jpg" alt="" class="img-fluid">
-        </a>
-    </div>
-    <div class="item">
-        <a href="productos.html#ediciones">
-            <img src="Imagenes/productos/ce/Switch_TLOZ_TOTK_Bundle_02-scaled-e1709671351305.jpg" alt="" class="img-fluid">
-        </a>
-    </div>
-</div>
+    </div> <!-- End of Header Section -->
+
+    <!-- Carousel Section -->
+    <div class="carousel-section">
+        <div class="owl-carousel owl-theme container-fluid pt-3 px-5 pt-5">
+            <div class="item">
+                <a href="productos.html#ediciones">
+                    <img src="Imagenes/productos/ce/SLIDER-elden-ring-shadow-of-the-erdtree-edition-collector-et-standard-article-blog-1024x614.jpg" alt="" class="img-fluid">
+                </a>
+            </div>
+            <div class="item">
+                <a href="productos.html#ediciones">
+                    <img src="Imagenes/productos/ce/SLIDER-persona-3-reload-collector-aigis-v1.jpg" alt="" class="img-fluid">
+                </a>
+            </div>
+            <div class="item">
+                <a href="productos.html#ediciones">
+                    <img src="Imagenes/productos/ce/Switch_TLOZ_TOTK_Bundle_02-scaled-e1709671351305.jpg" alt="" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div> <!-- End of Carousel Section -->
+</body>
 
     <!--Mas comprados-->
     <section>
