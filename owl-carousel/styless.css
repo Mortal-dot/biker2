@@ -36,4 +36,47 @@
     max-width: 100%; /* Asegura que la imagen no se desborde */
     height: auto; /* Mantiene la proporción de la imagen */
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el carrusel solo en dispositivos móviles */
+@media (max-width: 767px) {
+  .owl-carousel {
+    margin-top: 30px; /* Espacio adicional para que no se solapen con el header */
+  }
+
+  .owl-carousel .item {
+    padding: 0 5px; /* Reducimos el espacio entre las imágenes para que las tres se muestren más grandes */
+    display: flex;
+    justify-content: center; /* Asegura que las imágenes se centren */
+  }
+
+  .owl-carousel img {
+    width: 110%; /* Las imágenes se estiran un poco más en el ancho */
+    height: auto; /* Mantener la relación de aspecto original */
+    max-height: 600px; /* Aumentamos la altura máxima para hacerlas más grandes */
+    object-fit: contain; /* Asegura que las imágenes no se recorten y se ajusten dentro del contenedor */
+    margin-left: -5%; /* Compensamos el estiramiento para centrar la imagen */
+  }
+}
+
+@media (max-width: 480px) {
+  .owl-carousel img {
+    max-height: 500px; /* Ajustar aún más la altura en pantallas más pequeñas */
+    width: 120%; /* Aumentamos aún más el ancho para pantallas más pequeñas */
+    margin-left: -10%; /* Ajustamos el margen para centrar mejor la imagen */
+  }
+}
+
