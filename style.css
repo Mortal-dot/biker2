@@ -421,9 +421,9 @@ h2.title_style {
         flex: 0 0 48%; /* Cada video ocupará el 48% del ancho, dejando un pequeño espacio */
     }
 
-    /* Asegura que los videos se ajusten correctamente */
-    .custom-img-navidad {
-        width: 100%;   /* Ocupa el 100% del ancho disponible */
+    /* Aumenta el tamaño de los videos a más ancho en dispositivos móviles */
+    #navidad-video .col-12 video {
+        width: 100%;   /* Los videos ocuparán el 100% del ancho disponible */
         height: auto;  /* Mantiene las proporciones */
     }
 }
