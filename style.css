@@ -354,15 +354,15 @@ body {
 
 /* Estilos generales para el carrusel (PC) */
 .owl-carousel {
-  display: flex; /* Usamos flexbox para el carrusel */
-  justify-content: center; /* Asegura que las imágenes estén centradas */
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
   align-items: center; /* Centra las imágenes verticalmente */
-  gap: 20px; /* Espacio entre las imágenes */
+  gap: 30px; /* Espacio entre las imágenes */
 }
 
 .owl-carousel .item {
   display: flex;
-  justify-content: center; /* Centra las imágenes dentro del item */
+  justify-content: center;
   align-items: center;
   flex: 0 0 auto; /* Evita que las imágenes se estiren */
 }
@@ -370,8 +370,9 @@ body {
 .owl-carousel img {
   width: 33.33%; /* Cada imagen ocupará un tercio del carrusel */
   height: auto; /* Mantener la proporción de la imagen */
-  max-height: 700px; /* Ajustamos la altura máxima */
+  max-height: 800px; /* Aumentamos la altura máxima */
   object-fit: contain; /* Asegura que las imágenes no se recorten */
+  object-position: center center; /* Centra las imágenes dentro del carrusel */
 }
 
 /* Estilos para el carrusel solo en dispositivos móviles */
@@ -388,11 +389,11 @@ body {
   }
 
   .owl-carousel img {
-    width: 120%; /* Aumentamos el ancho aún más para que se vean más grandes */
+    width: 150%; /* Aumentamos el tamaño de las imágenes */
     height: auto; /* Mantener la relación de aspecto original */
     max-height: 90vh; /* Limita la altura de la imagen a un 90% del viewport */
     object-fit: contain; /* Asegura que las imágenes no se recorten */
-    margin-left: -15%; /* Ajustamos el margen para centrar mejor la imagen */
+    margin-left: -20%; /* Ajustamos el margen para centrar mejor la imagen */
   }
 
   /* Fijar el header para que no se mueva al hacer scroll */
@@ -408,16 +409,16 @@ body {
 @media (max-width: 480px) {
   /* En pantallas más pequeñas, ajustamos las imágenes */
   .owl-carousel img {
-    width: 150%; /* Aumentamos el tamaño horizontal de las imágenes */
+    width: 180%; /* Aumentamos aún más el tamaño de las imágenes */
     max-height: 90vh; /* Ajustamos la altura de la imagen */
-    margin-left: -25%; /* Ajustamos el margen para centrar mejor la imagen */
+    margin-left: -30%; /* Ajustamos el margen para centrar mejor la imagen */
   }
 }
 
-/* Estilos para hacer el carrusel más grande en PC */
+/* Estilos para hacer el carrusel aún más grande en PC */
 @media (min-width: 1024px) {
   .owl-carousel {
-    gap: 20px; /* Espacio entre las imágenes */
+    gap: 30px; /* Espacio entre las imágenes */
   }
 
   .owl-carousel .item {
@@ -427,9 +428,10 @@ body {
   }
 
   .owl-carousel img {
-    width: 33.33%; /* Las imágenes ocupan un tercio del carrusel */
+    width: 40%; /* Las imágenes ocupan un 40% del carrusel */
     height: auto; /* Mantener la proporción de la imagen */
-    max-height: 800px; /* Aumentamos la altura máxima */
+    max-height: 900px; /* Aumentamos la altura máxima */
     object-fit: contain; /* Asegura que las imágenes no se recorten */
+    object-position: center center; /* Asegura que la imagen se centre */
   }
 }
