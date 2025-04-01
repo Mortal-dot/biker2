@@ -341,3 +341,56 @@ h2.title_style {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos solo para dispositivos móviles */
+@media (max-width: 767px) {
+  /* Carrusel: aumentar el tamaño de las imágenes en móviles */
+  .owl-carousel .item img {
+    max-width: 100%;  /* Hacemos que las imágenes ocupen el 100% del contenedor */
+    height: auto;     /* Mantener la proporción de las imágenes */
+    margin: 0 auto;   /* Centra las imágenes */
+    border-radius: 10px;
+  }
+
+  /* Aumentamos el tamaño de la imagen al hacer hover en móviles */
+  .owl-carousel .item img:hover {
+    transform: scale(1.1);  /* Aumenta el tamaño al pasar el ratón */
+  }
+
+  /* Estilo del carrusel en móviles */
+  .owl-carousel {
+    gap: 10px; /* Reducimos el espacio entre las imágenes en móviles */
+    width: 100%; /* Asegura que el carrusel ocupe el 100% del contenedor */
+    margin-top: 50px; /* Aumentamos el espacio arriba para separarlo más del header */
+  }
+
+  /* Reducimos el margen de cada item para asegurar que el carrusel no se vea apretado */
+  .owl-carousel .item {
+    margin-right: 10px; /* Reducimos el margen derecho para dar más espacio a las imágenes */
+    height: auto;  /* Ajustamos la altura para que no haya recortes */
+  }
+}
