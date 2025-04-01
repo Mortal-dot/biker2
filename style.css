@@ -365,14 +365,14 @@ body {
 
   .owl-carousel img {
     width: 100%; /* Las imágenes ocupan el 100% del ancho */
-    height: auto; /* Mantener la proporción de la imagen */
-    max-height: 400px; /* Ajustar el tamaño máximo de las imágenes en móviles */
+    height: 500px; /* Aumentamos la altura de las imágenes */
     object-fit: cover; /* Asegura que las imágenes cubran el espacio disponible sin distorsionarse */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel img {
-    max-height: 350px; /* Ajuste para pantallas más pequeñas */
+    height: 450px; /* Ajustamos un poco más la altura para pantallas muy pequeñas */
   }
 }
+
