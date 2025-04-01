@@ -441,7 +441,7 @@ h2.title_style {
 .custom-img {
     width: 100%;
     height: auto;
-    max-width: 250px; /* Establecer un tamaño máximo para las imágenes */
+    max-width: 200px; /* Ajustar el tamaño de la imagen en móviles */
     margin-bottom: 15px; /* Espaciado en la parte inferior de la imagen */
 }
 
@@ -452,6 +452,7 @@ h2.title_style {
     padding: 15px; /* Espaciado interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
     transition: transform 0.3s ease-in-out; /* Animación suave al pasar el mouse */
+    margin-right: 15px; /* Espacio entre los productos */
 }
 
 /* Efecto al pasar el mouse sobre el producto */
@@ -493,8 +494,21 @@ h2.title_style {
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 767px) {
+    .row-flex-mobile {
+        display: flex;
+        flex-direction: row; /* Alinea los productos en una fila horizontal */
+        overflow-x: auto; /* Permite el deslizamiento horizontal si hay desbordamiento */
+        gap: 15px; /* Espacio entre los productos */
+        justify-content: flex-start; /* Alinea los productos a la izquierda */
+    }
+
+    .col {
+        flex: 0 0 auto; /* Los productos se ajustan en una fila */
+        max-width: 200px; /* Limita el ancho de cada producto */
+    }
+
     .sc-product-item {
-        margin: 10px; /* Agregar margen a cada producto */
+        margin-bottom: 20px; /* Espaciado entre las filas de productos */
     }
 
     .sc-add-to-cart {
