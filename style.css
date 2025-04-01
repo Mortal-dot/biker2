@@ -391,3 +391,44 @@ h2.title_style {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos solo para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Cambia la disposición para móviles, colocando los videos lado a lado */
+    #navidad-video .row {
+        display: flex;
+        justify-content: space-between; /* Espacio entre los dos videos */
+    }
+
+    /* Establece el tamaño de cada video en móviles */
+    #navidad-video .col-12 {
+        flex: 0 0 48%; /* Cada video ocupará el 48% del ancho, dejando un pequeño espacio */
+    }
+
+    /* Asegura que los videos se ajusten correctamente */
+    .custom-img-navidad {
+        width: 100%;   /* Ocupa el 100% del ancho disponible */
+        height: auto;  /* Mantiene las proporciones */
+    }
+}
+
+
+
+
+
