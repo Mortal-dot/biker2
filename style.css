@@ -366,19 +366,19 @@ body {
   }
 
   .owl-carousel img {
-    width: 130%; /* Aumentamos el ancho aún más */
+    width: 150%; /* Aumentamos el ancho aún más */
     height: auto; /* Mantener la relación de aspecto original */
-    max-height: 700px; /* Aumentamos aún más la altura máxima */
+    max-height: 800px; /* Aumentamos aún más la altura máxima */
     object-fit: contain; /* Asegura que las imágenes no se recorten y se ajusten dentro del contenedor */
-    margin-left: -15%; /* Ajustamos el margen para centrar mejor la imagen */
+    margin-left: -25%; /* Ajustamos el margen para centrar mejor la imagen */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel img {
-    max-height: 600px; /* Ajustamos la altura para pantallas aún más pequeñas */
-    width: 140%; /* Aumentamos el ancho aún más para pantallas más pequeñas */
-    margin-left: -20%; /* Ajustamos el margen para centrar mejor la imagen */
+    max-height: 750px; /* Ajustamos la altura para pantallas aún más pequeñas */
+    width: 160%; /* Aumentamos el ancho aún más para pantallas más pequeñas */
+    margin-left: -30%; /* Ajustamos el margen para centrar mejor la imagen */
   }
 }
 
