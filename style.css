@@ -355,11 +355,11 @@ body {
 /* Estilos generales para el carrusel */
 .owl-carousel {
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Alineamos los elementos hacia la parte superior */
-  flex-direction: column; /* Hacemos que los elementos se apilen verticalmente */
+  justify-content: flex-start; /* Alineamos los elementos hacia el inicio */
+  align-items: center; /* Centrar verticalmente los elementos */
+  flex-direction: row; /* Hacemos que los elementos se dispongan en una fila (horizontal) */
   gap: 20px; /* Añadimos un pequeño espacio entre las imágenes */
-  overflow: hidden; /* Asegura que las imágenes no se desborden */
+  overflow-x: auto; /* Permitimos desplazamiento horizontal si es necesario */
   position: relative;
   width: 100%;
   margin-top: 50px; /* Añadimos espacio arriba del carrusel */
@@ -370,11 +370,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Asegura que cada imagen ocupe todo el espacio disponible */
-  height: 500px; /* Ajustamos la altura del carrusel */
+  height: 500px; /* Mantenemos la altura del carrusel igual */
+  width: auto; /* Ajustamos el ancho de los elementos para que no se distorsionen */
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px; /* Añadimos un margen inferior para separar las imágenes */
+  margin-right: 20px; /* Añadimos un margen a la derecha para separar las imágenes */
 }
 
 /* Estilo de las imágenes dentro de cada item */
@@ -392,7 +392,7 @@ body {
   }
 
   .owl-carousel .item {
-    height: 300px; /* Ajustamos la altura de las imágenes en móviles */
+    height: 500px; /* Mantenemos la altura igual que en escritorio */
   }
 
   .owl-carousel .item img {
@@ -403,11 +403,11 @@ body {
 }
 
 @media (max-width: 480px) {
-  /* En pantallas más pequeñas, ajustamos las imágenes */
   .owl-carousel .item {
-    height: 250px; /* Ajustamos la altura de las imágenes */
+    height: 500px; /* Mantenemos la altura igual para pantallas más pequeñas */
   }
   .owl-carousel {
     margin-top: 20px; /* Reducimos el espacio arriba para pantallas más pequeñas */
   }
 }
+
