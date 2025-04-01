@@ -340,3 +340,39 @@ body {
   width: 100%;
   max-width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el carrusel solo en dispositivos móviles */
+@media (max-width: 767px) {
+  .owl-carousel {
+    margin-top: 30px; /* Espacio adicional en pantallas móviles para evitar que se solape con el header */
+  }
+
+  .owl-carousel .item {
+    padding: 0 10px; /* Espacio entre las imágenes */
+  }
+
+  .owl-carousel img {
+    width: 100%; /* Las imágenes ocupan el 100% del ancho */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-height: 400px; /* Ajustar el tamaño máximo de las imágenes en móviles */
+    object-fit: cover; /* Asegura que las imágenes cubran el espacio disponible sin distorsionarse */
+  }
+}
+
+@media (max-width: 480px) {
+  .owl-carousel img {
+    max-height: 350px; /* Ajuste para pantallas más pequeñas */
+  }
+}
