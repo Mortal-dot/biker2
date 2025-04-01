@@ -351,6 +351,44 @@ body {
 
 
 
+
+/* Estilos generales para el carrusel */
+.owl-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alineamos los elementos hacia la parte superior */
+  flex-direction: column; /* Hacemos que los elementos se apilen verticalmente */
+  gap: 20px; /* Añadimos un pequeño espacio entre las imágenes */
+  overflow: hidden; /* Asegura que las imágenes no se desborden */
+  position: relative;
+  width: 100%;
+  margin-top: 50px; /* Añadimos espacio arriba del carrusel */
+}
+
+/* Cada item dentro del carrusel */
+.owl-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Asegura que cada imagen ocupe todo el espacio disponible */
+  height: 500px; /* Ajustamos la altura del carrusel */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px; /* Añadimos un margen inferior para separar las imágenes */
+}
+
+/* Estilo de las imágenes dentro de cada item */
+.owl-carousel .item img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  object-position: center; /* Centra la imagen */
+}
+
+
+
+
+
 /* Estilos solo para dispositivos móviles */
 @media (max-width: 767px) {
   .owl-carousel {
