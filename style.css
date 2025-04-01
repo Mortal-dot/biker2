@@ -356,23 +356,24 @@ body {
 /* Estilos para el carrusel solo en dispositivos móviles */
 @media (max-width: 767px) {
   .owl-carousel {
-    margin-top: 30px; /* Espacio adicional en pantallas móviles para evitar que se solape con el header */
+    margin-top: 30px; /* Espacio adicional para que no se solapen con el header */
   }
 
   .owl-carousel .item {
-    padding: 0 10px; /* Espacio entre las imágenes */
+    padding: 0 5px; /* Reducimos el espacio entre las imágenes para que las tres se muestren más grandes */
   }
 
   .owl-carousel img {
     width: 100%; /* Las imágenes ocupan el 100% del ancho */
-    height: 500px; /* Aumentamos la altura de las imágenes */
-    object-fit: cover; /* Asegura que las imágenes cubran el espacio disponible sin distorsionarse */
+    height: auto; /* Mantener la relación de aspecto original */
+    max-height: 300px; /* Limitar la altura máxima para que no se estiren demasiado */
+    object-fit: contain; /* Asegura que las imágenes no se recorten y se ajusten dentro del contenedor */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel img {
-    height: 450px; /* Ajustamos un poco más la altura para pantallas muy pequeñas */
+    max-height: 250px; /* Ajustar aún más la altura en pantallas pequeñas */
   }
 }
 
