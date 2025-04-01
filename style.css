@@ -364,16 +364,16 @@ body {
   }
 
   .owl-carousel img {
-    width: 100%; /* Las imágenes ocupan el 100% del ancho */
+    width: 200%; /* Las imágenes ocupan el 100% del ancho */
     height: auto; /* Mantener la relación de aspecto original */
-    max-height: 300px; /* Limitar la altura máxima para que no se estiren demasiado */
+    max-height: 500px; /* Limitar la altura máxima para que no se estiren demasiado */
     object-fit: contain; /* Asegura que las imágenes no se recorten y se ajusten dentro del contenedor */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel img {
-    max-height: 250px; /* Ajustar aún más la altura en pantallas pequeñas */
+    max-height: 400px; /* Ajustar aún más la altura en pantallas pequeñas */
   }
 }
 
