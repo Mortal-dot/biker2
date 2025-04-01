@@ -1,0 +1,240 @@
+/* ---------------INICIO--------------- */
+
+.dark_color {
+    background-color: black;
+}
+
+.text {
+    color:white;
+}
+
+.body {
+    background-color: rgb(240, 248, 255);
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title_style {
+    background-color: #f11515;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.productsBorders {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 768px) {
+    .custom-img {
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .custom-img-nosotros {
+        max-width: 60%;
+    }
+    .custom-img-secciones {
+        max-width: 70%;
+    }
+    .custom-img-navidad {
+        max-width: 90%;
+    }
+}
+
+/* Estilos generales para html y body */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.body {
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Estilos del carrito */
+#cart {
+    position: absolute;
+    top: 125px; 
+    right: 10px;
+    background-color: #333; 
+    padding: 10px;
+    display: none; 
+    width: 200px;
+    z-index: 1; 
+}
+
+.cart_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.cart_li {
+    margin-bottom: 10px;
+}
+
+.cart_h2, .cart_button {
+    color: white; 
+}
+
+.cart_button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilos del formulario de checkout */
+#checkout-form-container {
+    position: fixed; 
+    top: 105px; 
+    right: 10px; 
+    width: 90%; 
+    max-width: 300px; 
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+}
+
+/* ---------------SOBRE NOSOTROS--------------- */
+
+.hx_font {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h2_nosotros {
+    font-size: 2rem;
+    color: #b42525;
+    margin-bottom: 2%;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text_nosotros {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.h3_sucursales {
+    font-size: 1.8rem;
+    color: #256db4;
+    margin-bottom: 3%;
+}
+
+.ul_sucursales {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li_sucursales {
+    font-size: 1rem;
+    margin-bottom: 1%;
+    color: #333;
+}
+
+/* ---------------contactos--------------- */
+
+.section_contactos {
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color:azure;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #b42525;
+}
+
+/* Asegura que el video ocupe un tamaño adecuado */
+.custom-img-navidad {
+    width: 100%;                    /* El video ocupará todo el ancho disponible del contenedor */
+    height: 400px;                  /* Ajusta la altura del video a un valor mayor (400px) */
+    object-fit: cover;              /* Hace que el video cubra el área sin distorsionar */
+    display: block;                 /* Asegura que el video se muestre correctamente */
+    margin: 0 auto;                 /* Asegura que el video se centre horizontalmente */
+    
+    /* Sombra negra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra negra suave */
+    
+    /* Bordes morados con un brillo sutil */
+    border: 4px solid transparent;   /* Borde transparente por defecto */
+    background-image: linear-gradient(white, white), radial-gradient(circle, #a8a8ff, #6c2bd0); /* Gradiente morado en los bordes */
+    background-origin: border-box;  /* Aplica el gradiente solo en el borde */
+    background-clip: content-box, border-box; /* Asegura que el gradiente se quede solo en el borde */
+    transition: all 0.3s ease;      /* Transición suave para el efecto hover */
+}
+
+/* Efecto al pasar el ratón para resaltar el video */
+.custom-img-navidad:hover {
+    /* Aumento de la sombra y del borde al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra negra más pronunciada */
+    transform: scale(1.05); /* Aumento ligero del tamaño para resaltar */
+    border: 4px solid transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle, #c2a9ff, #9a3edc); /* Gradiente morado más intenso en el borde */
+}
+
+/* Estilo para el contenedor del video */
+#navidad-video {
+    padding: 0;
+    background-color: #f8f9fa;  /* Color de fondo opcional */
+    width: 100%;                 /* Asegura que el contenedor ocupe el 100% del ancho */
+    height: auto;                /* El contenedor se ajustará a la altura del video */
+    max-width: 100%;             /* El contenedor tendrá un ancho máximo del 100% */
+    display: flex;               /* Usamos flex para centrar el contenido */
+    justify-content: center;     /* Centra el video horizontalmente */
+}
+
+/* Ajusta la apariencia de los títulos */
+.title_style {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.hx_font {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Asegura que la fila de videos se ajuste correctamente */
+.row {
+    display: flex;
+    justify-content: center; /* Centra los videos dentro de la fila */
+}
