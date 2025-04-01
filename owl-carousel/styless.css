@@ -20,7 +20,7 @@
 /* Estilos solo para dispositivos móviles */
 @media (max-width: 767px) {
   .owl-carousel {
-    gap: 10px; /* Espaciado reducido entre las imágenes */
+    gap: 5px; /* Espaciado reducido entre las imágenes */
   }
 
   .owl-carousel .item {
@@ -29,35 +29,41 @@
     align-items: center;
   }
 
-  /* Hacemos las imágenes más grandes y centradas solo en móviles */
+  /* Hacemos las imágenes mucho más grandes y centradas solo en móviles */
   .owl-carousel .item img {
-    width: 120%; /* Aumentamos el tamaño horizontal de las imágenes */
+    width: 300%; /* Aumentamos el tamaño horizontal de las imágenes significativamente */
     height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 90vh; /* Limita la altura de la imagen a un 90% del viewport */
-    object-fit: contain; /* Asegura que las imágenes no se corten */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen sin recortarla */
-    object-position: center center; /* Asegura que la imagen esté centrada */
+    max-height: 100vh; /* Permitimos que las imágenes ocupen el 100% de la altura de la pantalla */
+    object-fit: contain; /* Asegura que las imágenes no se recorten */
+    margin-left: -100%; /* Ajustamos el margen para centrarlas mejor */
   }
 
   /* Para las opiniones de clientes */
   #reviews .owl-carousel .item img {
-    width: 120%; /* Aumentamos el tamaño horizontal de las imágenes */
+    width: 300%; /* Aumentamos el tamaño horizontal de las imágenes */
     height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 90vh; /* Limita la altura de la imagen a un 90% del viewport */
-    object-fit: contain; /* Asegura que las imágenes no se corten */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen sin recortarla */
-    object-position: center center; /* Asegura que la imagen esté centrada */
+    max-height: 100vh; /* Permitimos que las imágenes ocupen el 100% de la altura de la pantalla */
+    object-fit: contain; /* Asegura que las imágenes no se recorten */
+    margin-left: -100%; /* Ajustamos el margen para centrarlas mejor */
   }
 }
 
+@media (max-width: 480px) {
+  .owl-carousel .item img {
+    width: 350%; /* Hacemos las imágenes aún más grandes en pantallas más pequeñas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 100vh; /* Permitimos que las imágenes ocupen el 100% de la altura de la pantalla */
+    margin-left: -120%; /* Ajustamos el margen para centrar aún más las imágenes */
+  }
 
-
-
-
-
-
-
-
+  /* Para las opiniones de clientes */
+  #reviews .owl-carousel .item img {
+    width: 350%; /* Hacemos las imágenes aún más grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 100vh; /* Permitimos que las imágenes ocupen el 100% de la altura de la pantalla */
+    margin-left: -120%; /* Ajustamos el margen para centrar aún más las imágenes */
+  }
+}
 
 
 
