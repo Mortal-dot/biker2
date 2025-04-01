@@ -355,11 +355,13 @@ body {
 .owl-carousel {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0; /* Quitamos el espacio entre las imágenes */
+  align-items: flex-start; /* Alineamos los elementos hacia la parte superior */
+  flex-direction: column; /* Hacemos que los elementos se apilen verticalmente */
+  gap: 20px; /* Añadimos un pequeño espacio entre las imágenes */
   overflow: hidden; /* Asegura que las imágenes no se desborden */
   position: relative;
   width: 100%;
+  margin-top: 50px; /* Añadimos espacio arriba del carrusel */
 }
 
 /* Cada item dentro del carrusel */
@@ -371,6 +373,7 @@ body {
   height: 500px; /* Ajustamos la altura del carrusel */
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px; /* Añadimos un margen inferior para separar las imágenes */
 }
 
 /* Estilo de las imágenes dentro de cada item */
@@ -384,7 +387,7 @@ body {
 /* Estilos solo para dispositivos móviles */
 @media (max-width: 767px) {
   .owl-carousel {
-    gap: 0; /* Quitamos el espacio entre las imágenes */
+    gap: 10px; /* Reducimos el espacio entre las imágenes en móviles */
   }
 
   .owl-carousel .item {
@@ -402,5 +405,8 @@ body {
   /* En pantallas más pequeñas, ajustamos las imágenes */
   .owl-carousel .item {
     height: 250px; /* Ajustamos la altura de las imágenes */
+  }
+  .owl-carousel {
+    margin-top: 20px; /* Reducimos el espacio arriba para pantallas más pequeñas */
   }
 }
