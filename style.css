@@ -352,66 +352,55 @@ body {
 
 
 
-/* Estilos generales para el carrusel (PC) */
+/* Estilos generales para el carrusel */
 .owl-carousel {
   display: flex;
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  align-items: center; /* Centra las imágenes verticalmente */
+  justify-content: center;
+  align-items: center;
   gap: 30px; /* Espacio entre las imágenes */
+  overflow: hidden; /* Asegura que las imágenes no se desborden */
+  position: relative;
 }
 
+/* Cada item dentro del carrusel */
 .owl-carousel .item {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 auto; /* Evita que las imágenes se estiren */
+  width: 100%; /* Asegura que cada imagen ocupe todo el espacio disponible */
+  height: 500px; /* Asegura que cada imagen tenga una altura adecuada */
+  overflow: hidden;
+  position: relative;
 }
 
-.owl-carousel img {
-  width: 75%; /* Aumentamos el tamaño de las imágenes al 75% en PC */
-  height: auto; /* Mantener la proporción de la imagen */
-  max-height: 1200px; /* Aumentamos la altura máxima */
-  object-fit: contain; /* Asegura que las imágenes no se recorten */
-  object-position: center center; /* Centra las imágenes dentro del carrusel */
+/* Estilo de las imágenes dentro de cada item */
+.owl-carousel .item img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionar */
+  object-position: center; /* Centra la imagen */
 }
 
-/* Estilos para el carrusel solo en dispositivos móviles */
+/* Estilos solo para dispositivos móviles */
 @media (max-width: 767px) {
   .owl-carousel {
-    margin-top: 30px; /* Espacio adicional para que no se solapen con el header */
-    gap: 10px; /* Reducimos el espacio entre las imágenes */
+    gap: 5px; /* Reducimos el espacio entre las imágenes */
   }
 
   .owl-carousel .item {
-    padding: 0 5px; /* Reducimos el espacio entre las imágenes */
-    display: flex;
-    justify-content: center; /* Asegura que las imágenes se centren */
-    align-items: center;
+    height: 400px; /* Ajustamos la altura de las imágenes en móviles */
   }
 
-  .owl-carousel img {
-    width: 250%; /* Aumentamos el tamaño de las imágenes horizontalmente */
-    height: auto; /* Mantener la relación de aspecto original */
-    max-height: 100vh; /* Ajustamos la altura máxima para que ocupe todo el alto del viewport */
-    object-fit: contain; /* Asegura que las imágenes no se recorten */
-    margin-left: -75%; /* Ajustamos el margen para centrar mejor las imágenes */
-  }
-
-  /* Fijar el header para que no se mueva al hacer scroll */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Asegura que el header quede por encima de otros elementos */
+  .owl-carousel .item img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
   }
 }
 
 @media (max-width: 480px) {
   /* En pantallas más pequeñas, ajustamos las imágenes */
-  .owl-carousel img {
-    width: 300%; /* Aumentamos aún más el tamaño de las imágenes en pantallas más pequeñas */
-    max-height: 100vh; /* Ajustamos la altura de la imagen para que ocupe todo el alto del viewport */
-    margin-left: -85%; /* Ajustamos el margen para centrar mejor la imagen */
+  .owl-carousel .item {
+    height: 350px; /* Ajustamos la altura de las imágenes */
   }
 }
