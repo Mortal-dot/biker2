@@ -537,3 +537,149 @@ h2.title_style {
         max-width: 250px; /* Tamaño máximo de las imágenes en pantallas grandes */
     }
 }
+
+
+
+
+/* General: Estilos comunes para todas las pantallas */
+.header-section {
+    background-color: #333; /* Fondo oscuro para el header */
+    color: white;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Hacer que el logo sea más pequeño en pantallas móviles */
+    .navbar-brand img {
+        width: 80px;
+        height: auto;
+    }
+
+    /* Hacer que el nombre del sitio sea más pequeño en móviles */
+    .navbar-brand h1 {
+        font-size: 1.4rem; /* Reducir el tamaño de la fuente en móviles */
+        margin-left: 10px; /* Agregar espacio al lado del logo */
+    }
+
+    /* Mejorar la apariencia del menú */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* Mostrar el botón de menú de manera más destacada */
+    .navbar-toggler {
+        border: 2px solid #fff; /* Asegurar que el botón de menú sea visible */
+        background-color: #444; /* Fondo oscuro para el botón */
+    }
+
+    /* Estilizar el menú desplegable en móviles */
+    .navbar-collapse {
+        background-color: #444; /* Fondo oscuro para el menú en móvil */
+        border-top: 1px solid #666; /* Separador para el menú */
+        padding-top: 10px; /* Espaciado superior */
+        padding-bottom: 10px; /* Espaciado inferior */
+    }
+
+    /* Estilizar los enlaces de navegación */
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Agregar margen entre los elementos */
+    }
+
+    /* Estilizar los íconos en el header */
+    .navbar-nav .nav-link img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px; /* Espaciado entre los íconos */
+    }
+
+    /* Mejorar la apariencia del carrito desplegable */
+    #cart {
+        position: absolute;
+        top: 70px; /* Ajustar la posición del carrito */
+        right: 20px;
+        background-color: white;
+        color: black;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        width: 250px;
+        z-index: 1000;
+    }
+
+    #cart h2 {
+        font-size: 1.4rem; /* Ajustar el tamaño de la fuente */
+        margin-bottom: 15px;
+    }
+
+    #cart ul {
+        max-height: 300px;
+        overflow-y: auto; /* Agregar scroll si hay muchos productos */
+    }
+
+    .cart_button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #28a745; /* Color verde para el botón */
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .cart_button:hover {
+        background-color: #218838; /* Cambiar a un verde más oscuro al hacer hover */
+    }
+
+    /* Formulario de Checkout */
+    #checkout-form-container {
+        background-color: #fff;
+        color: black;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #checkout-form .form-label {
+        font-size: 1rem;
+    }
+
+    #checkout-form input {
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #checkout-form button {
+        width: 100%; /* Hacer que el botón ocupe todo el ancho */
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #checkout-form button:hover {
+        background-color: #0056b3; /* Cambiar color del botón al hacer hover */
+    }
+}
+
+/* Ajustes para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand h1 {
+        font-size: 1.5rem; /* Un poco más grande que en móviles */
+    }
+
+    .navbar-nav .nav-link img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #cart {
+        width: 300px; /* Aumentar tamaño del carrito en tabletas */
+    }
+}
