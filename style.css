@@ -356,20 +356,24 @@ body {
 @media (max-width: 767px) {
   .owl-carousel {
     margin-top: 30px; /* Espacio adicional para que no se solapen con el header */
+    display: flex; /* Usamos flexbox para el carrusel */
+    justify-content: center; /* Asegura que las imágenes estén centradas */
+    align-items: center; /* Centra las imágenes verticalmente */
   }
 
   .owl-carousel .item {
-    padding: 0 5px; /* Reducimos el espacio entre las imágenes para que las tres se muestren más grandes */
     display: flex;
-    justify-content: center; /* Asegura que las imágenes se centren */
+    justify-content: center; /* Centra las imágenes dentro del item */
+    align-items: center;
+    flex: 0 0 auto; /* Evita que las imágenes se estiren */
   }
 
+  /* Estilos para las imágenes dentro del carrusel */
   .owl-carousel img {
-    width: 500%; /* Aumentamos el ancho aún más */
-    height: auto; /* Mantener la relación de aspecto original */
-    max-height: 1000px; /* Aumentamos la altura máxima para que las imágenes sean un poco más largas */
-    object-fit: contain; /* Asegura que las imágenes no se recorten y se ajusten dentro del contenedor */
-    margin-left: -60%; /* Ajustamos el margen para centrar mejor la imagen */
+    width: 33.33%; /* Cada imagen ocupará un tercio del carrusel */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-height: 400px; /* Limita la altura para que no se hagan demasiado grandes */
+    object-fit: contain; /* Asegura que las imágenes no se recorten */
   }
 
   /* Fijar el header para que no se mueva al hacer scroll */
@@ -383,9 +387,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  /* En pantallas más pequeñas, reducimos la altura máxima y las imágenes aún más */
   .owl-carousel img {
-    max-height: 1000px; /* Ajustamos la altura para pantallas aún más pequeñas */
-    width: 700%; /* Aumentamos el ancho aún más para pantallas más pequeñas */
-    margin-left: -70%; /* Ajustamos el margen para centrar mejor la imagen */
+    max-height: 350px; /* Limita la altura para pantallas más pequeñas */
+    width: 33.33%; /* Asegura que las imágenes ocupen un tercio del carrusel */
+    margin-left: 0; /* Ajustamos el margen para que las imágenes estén bien alineadas */
   }
 }
