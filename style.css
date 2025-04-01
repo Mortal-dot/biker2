@@ -431,3 +431,95 @@ h2.title_style {
 
 
 
+
+
+
+
+
+
+/* Asegurar que las imágenes sean responsivas */
+.custom-img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Establecer un tamaño máximo para las imágenes */
+    margin-bottom: 15px; /* Espaciado en la parte inferior de la imagen */
+}
+
+/* Estilizar el contenedor de los productos */
+.sc-product-item {
+    background-color: #f9f9f9; /* Fondo claro para los productos */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+    transition: transform 0.3s ease-in-out; /* Animación suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre el producto */
+.sc-product-item:hover {
+    transform: translateY(-10px); /* Levanta el producto cuando se pasa el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Títulos de los productos */
+.sc-product-item h4 {
+    font-size: 1.2rem;
+    color: #333; /* Color oscuro para los títulos */
+    font-weight: 600;
+    margin-bottom: 10px; /* Espaciado entre el título y la descripción */
+}
+
+/* Descripción de los productos */
+.sc-product-item p {
+    font-size: 1rem;
+    color: #666; /* Color gris claro para las descripciones */
+    margin-bottom: 15px; /* Espaciado entre la descripción y el botón */
+}
+
+/* Estilo para el botón de agregar al carrito */
+.sc-add-to-cart {
+    background-color: #28a745; /* Color verde para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.sc-add-to-cart:hover {
+    background-color: #218838; /* Cambia el color del botón cuando se pasa el mouse */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    .sc-product-item {
+        margin: 10px; /* Agregar margen a cada producto */
+    }
+
+    .sc-add-to-cart {
+        width: 100%; /* Hacer que el botón ocupe todo el ancho en móviles */
+    }
+}
+
+/* Ajustes para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sc-product-item {
+        margin: 10px; /* Margen para tabletas */
+    }
+
+    .custom-img {
+        max-width: 200px; /* Ajustar el tamaño de la imagen en tabletas */
+    }
+}
+
+/* Ajustes para pantallas grandes (escritorios) */
+@media (min-width: 992px) {
+    .sc-product-item {
+        margin: 20px; /* Más margen en pantallas grandes */
+    }
+
+    .custom-img {
+        max-width: 250px; /* Tamaño máximo de las imágenes en pantallas grandes */
+    }
+}
