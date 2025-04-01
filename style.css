@@ -387,12 +387,15 @@ body {
 
 /* Estilos solo para dispositivos móviles */
 @media (max-width: 767px) {
+  /* Reducimos el espacio entre las imágenes */
   .owl-carousel {
-    gap: 10px; /* Reducimos el espacio entre las imágenes en móviles */
+    gap: 5px;
   }
 
   .owl-carousel .item {
-    height: 500px; /* Mantenemos la altura igual que en escritorio */
+    height: 300px; /* Reducimos la altura en dispositivos móviles */
+    width: 100%; /* Aseguramos que cada item ocupe el 100% del ancho */
+    margin-right: 10px; /* Reducimos el margen entre los items */
   }
 
   .owl-carousel .item img {
@@ -402,12 +405,65 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .owl-carousel .item {
-    height: 500px; /* Mantenemos la altura igual para pantallas más pequeñas */
+/* Estilo para la sección de productos más vendidos */
+@media (max-width: 767px) {
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .owl-carousel {
-    margin-top: 20px; /* Reducimos el espacio arriba para pantallas más pequeñas */
+
+  .title_style {
+    text-align: center; /* Centra el título en dispositivos móviles */
+    font-size: 24px; /* Ajustamos el tamaño de la fuente */
+  }
+
+  /* Ajustamos la disposición de los productos para pantallas más pequeñas */
+  .row-cols-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en dispositivos pequeños */
+    gap: 10px;
+  }
+
+  .col {
+    padding: 0; /* Eliminamos el padding extra de las columnas */
+  }
+
+  /* Ajustamos el tamaño de las imágenes de los productos */
+  .custom-img {
+    width: 100%;
+    height: auto; /* Ajustamos las imágenes a su tamaño original */
+  }
+
+  .sc-product-item {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Ajustamos el tamaño del botón */
+  .sc-add-to-cart {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
   }
 }
 
+/* Para pantallas más pequeñas (480px y menos) */
+@media (max-width: 480px) {
+  .title_style {
+    font-size: 20px; /* Ajustamos el tamaño del título */
+  }
+
+  .row-cols-1 {
+    grid-template-columns: repeat(1, 1fr); /* Una sola columna */
+  }
+
+  .sc-product-item {
+    padding: 5px;
+  }
+
+  .sc-add-to-cart {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
