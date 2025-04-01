@@ -368,21 +368,26 @@ h2.title_style {
 
 /* Estilos solo para dispositivos móviles */
 @media (max-width: 767px) {
-  /* Hacemos que las imágenes del carrusel sean más grandes en móviles */
-  .owl-carousel .item img {
-    width: 120%;    /* Aumentamos el tamaño de la imagen al 120% del contenedor */
-    height: auto;   /* Mantenemos la proporción de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra todo el área sin distorsionarse */
-  }
-
-  /* Ajustamos el margen para las imágenes en móviles */
-  .owl-carousel .item {
-    margin-right: 15px; /* Aumentamos el espacio entre las imágenes */
-  }
-
-  /* Ajustamos el carrusel para que ocupe el 100% del contenedor */
   .owl-carousel {
-    gap: 15px;  /* Agregamos más espacio entre las imágenes */
+    display: flex;
+    flex-direction: column; /* Disposición en columna (vertical) */
+    align-items: center; /* Centra las imágenes horizontalmente */
+    gap: 15px;  /* Espacio entre las imágenes */
     width: 100%;
+    padding: 0 20px;  /* Añadimos algo de padding para que no toquen los bordes */
+  }
+
+  .owl-carousel .item {
+    width: 100%;   /* Las imágenes ocuparán el 100% del ancho del contenedor */
+    height: auto;  /* Ajustamos la altura automáticamente */
+    margin-right: 0; /* Eliminamos el margen derecho */
+  }
+
+  /* Hacemos las imágenes más grandes en móvil */
+  .owl-carousel .item img {
+    width: 100%;    /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto;   /* Mantiene la proporción de las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
   }
 }
+
