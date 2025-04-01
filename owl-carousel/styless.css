@@ -4,39 +4,47 @@
     justify-content: center; /* Centra las imágenes horizontalmente */
     align-items: center; /* Centra las imágenes verticalmente */
     gap: 15px; /* Espaciado entre las imágenes */
-  }
-  
-  /* Estilos para las imágenes dentro del carrusel */
-  .owl-carousel .item {
+}
+
+.owl-carousel .item {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .owl-carousel .item img {
-    max-width: 100%; /* Asegura que la imagen no se desborde */
+}
+
+/* Hacemos las imágenes más grandes y centradas */
+.owl-carousel .item img {
+    width: 120%; /* Aumentamos el tamaño horizontal de las imágenes */
     height: auto; /* Mantiene la proporción de la imagen */
-  }
-  
-  /* Para las opiniones de clientes */
-  #reviews .owl-carousel {
+    max-height: 90vh; /* Limita la altura de la imagen a un 90% del viewport */
+    object-fit: contain; /* Asegura que las imágenes no se corten */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen sin recortarla */
+    object-position: center center; /* Asegura que la imagen esté centrada */
+}
+
+/* Para las opiniones de clientes */
+#reviews .owl-carousel {
     display: flex;
     justify-content: center; /* Centra las imágenes horizontalmente */
     align-items: center; /* Centra las imágenes verticalmente */
     gap: 15px; /* Espaciado entre las imágenes */
-  }
-  
-  #reviews .owl-carousel .item {
+}
+
+#reviews .owl-carousel .item {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  #reviews .owl-carousel .item img {
-    max-width: 100%; /* Asegura que la imagen no se desborde */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
+}
 
+/* Hacemos las imágenes más grandes y centradas */
+#reviews .owl-carousel .item img {
+    width: 120%; /* Aumentamos el tamaño horizontal de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 90vh; /* Limita la altura de la imagen a un 90% del viewport */
+    object-fit: contain; /* Asegura que las imágenes no se corten */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen sin recortarla */
+    object-position: center center; /* Asegura que la imagen esté centrada */
+}
 
 
 
