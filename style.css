@@ -238,3 +238,105 @@ footer {
     display: flex;
     justify-content: center; /* Centra los videos dentro de la fila */
 }
+
+
+
+
+
+
+
+
+/* Estilos generales para las secciones */
+section {
+  padding: 50px 0;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.productsBorders {
+  border: 1px solid #ddd; /* Agrega borde entre secciones */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.productsBorders img {
+  max-width: 100%; /* Asegura que las imágenes no se desborden */
+  height: auto;
+  flex-basis: 35%;
+}
+
+.productsBorders div {
+  flex-basis: 60%;
+}
+
+h2.title_style {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Títulos y párrafos */
+.hx_font {
+  font-family: "Arial", sans-serif;
+}
+
+.productsBorders h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.productsBorders p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  .productsBorders img {
+    flex-basis: 100%; /* Las imágenes ocuparán el 100% del ancho */
+    margin-bottom: 15px;
+  }
+
+  .productsBorders div {
+    flex-basis: 100%; /* El contenido textual ocupará el 100% del ancho */
+  }
+
+  .productsBorders h3 {
+    font-size: 1.3rem;
+  }
+
+  .productsBorders p {
+    font-size: 0.9rem;
+  }
+
+  h2.title_style {
+    font-size: 1.6rem;
+  }
+}
+
+/* Para prevenir el zoom no deseado en móviles */
+html, body {
+  touch-action: manipulation;
+}
+
+body {
+  overflow-x: hidden; /* Evitar desplazamiento horizontal en móviles */
+  max-width: 100%;
+  position: relative;
+}
+
+/* Aseguramos que todo se mantenga alineado a la izquierda */
+.container-fluid, .row {
+  width: 100%;
+  max-width: 100%;
+}
