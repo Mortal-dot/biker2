@@ -353,7 +353,6 @@ body {
 
 
 
-
 /* Estilos para el carrusel solo en dispositivos móviles */
 @media (max-width: 767px) {
   .owl-carousel {
@@ -367,18 +366,18 @@ body {
   }
 
   .owl-carousel img {
-    width: 400%; /* Aumentamos el ancho aún más */
+    width: 500%; /* Aumentamos el ancho considerablemente para aprovechar todo el espacio */
     height: auto; /* Mantener la relación de aspecto original */
-    max-height: 900px; /* Aumentamos aún más la altura máxima */
+    max-height: 1200px; /* Aumentamos la altura máxima para que las imágenes sean mucho más grandes */
     object-fit: contain; /* Asegura que las imágenes no se recorten y se ajusten dentro del contenedor */
-    margin-left: -40%; /* Ajustamos el margen para centrar mejor la imagen */
+    margin-left: -60%; /* Ajustamos el margen para centrar mejor la imagen */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel img {
-    max-height: 900px; /* Ajustamos la altura para pantallas aún más pequeñas */
-    width: 300%; /* Aumentamos el ancho aún más para pantallas más pequeñas */
-    margin-left: -30%; /* Ajustamos el margen para centrar mejor la imagen */
+    max-height: 1300px; /* Aumentamos la altura máxima para pantallas más pequeñas */
+    width: 600%; /* Aumentamos el ancho aún más para pantallas más pequeñas */
+    margin-left: -75%; /* Ajustamos el margen para centrar la imagen */
   }
-} aumentemos considerablemente el tamaño ya que se ve muy pequeñas y todavia queda sitio para hacerlas mas grandes
+}
