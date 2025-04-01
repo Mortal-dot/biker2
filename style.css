@@ -393,14 +393,14 @@ body {
   }
 
   .owl-carousel .item {
-    height: 300px; /* Reducimos la altura en dispositivos móviles */
-    width: 100%; /* Aseguramos que cada item ocupe el 100% del ancho */
+    height: 500px; /* Reducimos la altura en dispositivos móviles */
+    width: 200%; /* Aseguramos que cada item ocupe el 100% del ancho */
     margin-right: 10px; /* Reducimos el margen entre los items */
   }
 
   .owl-carousel .item img {
-    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
-    height: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    width: 200%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: 200%; /* Asegura que la imagen ocupe el 100% del contenedor */
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
   }
 }
