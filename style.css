@@ -368,9 +368,9 @@ body {
 }
 
 .owl-carousel img {
-  width: 33.33%; /* Cada imagen ocupará un tercio del carrusel */
+  width: 50%; /* Aumentamos el tamaño de las imágenes a un 50% en PC */
   height: auto; /* Mantener la proporción de la imagen */
-  max-height: 800px; /* Aumentamos la altura máxima */
+  max-height: 1000px; /* Aumentamos la altura máxima */
   object-fit: contain; /* Asegura que las imágenes no se recorten */
   object-position: center center; /* Centra las imágenes dentro del carrusel */
 }
@@ -389,11 +389,11 @@ body {
   }
 
   .owl-carousel img {
-    width: 150%; /* Aumentamos el tamaño de las imágenes */
+    width: 200%; /* Aumentamos el tamaño de las imágenes horizontalmente */
     height: auto; /* Mantener la relación de aspecto original */
-    max-height: 90vh; /* Limita la altura de la imagen a un 90% del viewport */
+    max-height: 100vh; /* Ajustamos la altura máxima para que ocupe todo el alto del viewport */
     object-fit: contain; /* Asegura que las imágenes no se recorten */
-    margin-left: -20%; /* Ajustamos el margen para centrar mejor la imagen */
+    margin-left: -50%; /* Ajustamos el margen para centrar mejor las imágenes */
   }
 
   /* Fijar el header para que no se mueva al hacer scroll */
@@ -409,9 +409,9 @@ body {
 @media (max-width: 480px) {
   /* En pantallas más pequeñas, ajustamos las imágenes */
   .owl-carousel img {
-    width: 180%; /* Aumentamos aún más el tamaño de las imágenes */
-    max-height: 90vh; /* Ajustamos la altura de la imagen */
-    margin-left: -30%; /* Ajustamos el margen para centrar mejor la imagen */
+    width: 250%; /* Aumentamos aún más el tamaño de las imágenes en pantallas más pequeñas */
+    max-height: 100vh; /* Ajustamos la altura de la imagen para que ocupe todo el alto del viewport */
+    margin-left: -70%; /* Ajustamos el margen para centrar mejor la imagen */
   }
 }
 
@@ -428,9 +428,9 @@ body {
   }
 
   .owl-carousel img {
-    width: 40%; /* Las imágenes ocupan un 40% del carrusel */
+    width: 60%; /* Aumentamos el tamaño de las imágenes a un 60% en pantallas grandes */
     height: auto; /* Mantener la proporción de la imagen */
-    max-height: 900px; /* Aumentamos la altura máxima */
+    max-height: 1200px; /* Aumentamos la altura máxima */
     object-fit: contain; /* Asegura que las imágenes no se recorten */
     object-position: center center; /* Asegura que la imagen se centre */
   }
