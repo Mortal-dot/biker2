@@ -361,7 +361,7 @@ body {
   gap: 20px; /* Añadimos un pequeño espacio entre las imágenes */
   overflow-x: auto; /* Permitimos desplazamiento horizontal si es necesario */
   position: relative;
-  width: 100%;
+  width: 200%;
   margin-top: 50px; /* Añadimos espacio arriba del carrusel */
 }
 
@@ -370,7 +370,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px; /* Mantenemos la altura del carrusel igual */
+  height: 600px; /* Mantenemos la altura del carrusel igual */
   width: auto; /* Ajustamos el ancho de los elementos para que no se distorsionen */
   overflow: hidden;
   position: relative;
@@ -379,8 +379,8 @@ body {
 
 /* Estilo de las imágenes dentro de cada item */
 .owl-carousel .item img {
-  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-  height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+  width:200%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  height: 200%; /* Hace que la imagen ocupe toda la altura del contenedor */
   object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
   object-position: center; /* Centra la imagen */
 }
