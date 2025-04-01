@@ -417,7 +417,7 @@ h2.title_style {
 
     /* Cada video ocupará el 48% del ancho */
     #navidad-video .col-12 {
-        flex: 0 0 48%; /* Cada video ocupará el 48% del ancho disponible */
+        flex: 0 0 60%; /* Cada video ocupará el 48% del ancho disponible */
     }
 
     /* Estilo para los videos, aumentando el ancho */
