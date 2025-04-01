@@ -367,18 +367,18 @@ body {
   }
 
   .owl-carousel img {
-    width: 200%; /* Aumentamos el ancho considerablemente */
+    width: 400%; /* Aumentamos el ancho aún más */
     height: auto; /* Mantener la relación de aspecto original */
-    max-height: 1000px; /* Aumentamos aún más la altura máxima */
+    max-height: 900px; /* Aumentamos aún más la altura máxima */
     object-fit: contain; /* Asegura que las imágenes no se recorten y se ajusten dentro del contenedor */
-    margin-left: -50%; /* Ajustamos el margen para centrar mejor la imagen */
+    margin-left: -40%; /* Ajustamos el margen para centrar mejor la imagen */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel img {
-    max-height: 1200px; /* Aumentamos la altura máxima para pantallas aún más pequeñas */
-    width: 220%; /* Aumentamos el ancho considerablemente para pantallas más pequeñas */
-    margin-left: -60%; /* Ajustamos aún más el margen para centrar la imagen */
+    max-height: 900px; /* Ajustamos la altura para pantallas aún más pequeñas */
+    width: 300%; /* Aumentamos el ancho aún más para pantallas más pequeñas */
+    margin-left: -30%; /* Ajustamos el margen para centrar mejor la imagen */
   }
-}
+} aumentemos considerablemente el tamaño ya que se ve muy pequeñas y todavia queda sitio para hacerlas mas grandes
