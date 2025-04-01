@@ -577,3 +577,96 @@ h2.title_style {
         width: 300px; /* Aumentar tamaño del carrito en tabletas */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General: Estilos comunes para todas las pantallas */
+footer {
+    background-color: #333; /* Fondo oscuro para el pie de página */
+    color: white;
+    padding: 20px 0;
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Ajustar el tamaño del logo y el texto en dispositivos móviles */
+    footer .logo {
+        width: 60px;  /* Reducir el tamaño del logo */
+        height: auto;
+    }
+
+    footer h3 {
+        font-size: 1.2rem; /* Hacer que el texto sea un poco más pequeño */
+    }
+
+    /* Hacer que los elementos del footer estén alineados de forma más sencilla */
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .ps-5 {
+        padding-left: 0;  /* Eliminar el padding a la izquierda en pantallas pequeñas */
+    }
+
+    /* Hacer que las redes sociales se alineen en fila */
+    footer .col-6 {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    footer .col-6 a {
+        margin: 0 10px;  /* Espaciado entre los íconos de redes sociales */
+    }
+
+    /* Ajustar el texto de copyright y creador */
+    footer .d-flex.justify-content-center {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer .text {
+        font-size: 0.8rem; /* Reducir el tamaño de texto para "Creado por Xdeghost" */
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    /* Estilizar los enlaces de las redes sociales */
+    footer .col-6 a img {
+        width: 30px; /* Reducir el tamaño de los íconos de redes sociales */
+        height: auto;
+    }
+}
+
+/* Ajustes para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer .logo {
+        width: 80px;
+    }
+
+    footer h3 {
+        font-size: 1.5rem;
+    }
+}
