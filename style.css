@@ -682,3 +682,52 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos específicos para pantallas grandes (PC) */
+@media (min-width: 992px) {
+    /* Contenedor flex para las secciones */
+    .pc-flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px; /* Reducido aún más el espacio entre la imagen y el texto */
+        margin-bottom: 30px; /* Separación entre las secciones */
+    }
+
+    /* Imagen dentro del contenedor */
+    .custom-img-secciones, .custom-img-nosotros {
+        width: 35%; /* Reducir el tamaño de la imagen al 35% */
+        height: auto;
+        object-fit: cover; /* Mantener la proporción de la imagen */
+        border-radius: 8px; /* Bordes redondeados para la imagen */
+    }
+
+    /* Contenedor del texto */
+    .section-text {
+        width: 60%; /* El texto ocupará el 60% del contenedor */
+        line-height: 1.5;
+        margin-left: -300px; /* Aplicar margen negativo para mover el texto aún más a la izquierda */
+    }
+
+    /* Títulos y texto */
+    .section-text h3 {
+        font-size: 1.3rem; /* Reducir el tamaño del título */
+        margin-bottom: 10px;
+        color: #333; /* Título con un color más oscuro */
+    }
+
+    .section-text p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        color: #555; /* Texto un poco más claro */
+    }
+}
