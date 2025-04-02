@@ -605,19 +605,20 @@ h2.title_style {
 footer {
     background-color: #333; /* Fondo oscuro para el pie de página */
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;  /* Reducir el padding para hacerlo más compacto */
 }
 
 /* Ajustes específicos para dispositivos móviles */
 @media (max-width: 767px) {
     /* Ajustar el tamaño del logo y el texto en dispositivos móviles */
     footer .logo {
-        width: 60px;  /* Reducir el tamaño del logo */
+        width: 50px;  /* Reducir más el tamaño del logo */
         height: auto;
     }
 
     footer h3 {
-        font-size: 1.2rem; /* Hacer que el texto sea un poco más pequeño */
+        font-size: 1.1rem; /* Reducir más el tamaño del texto */
+        margin-left: 10px; /* Agregar un pequeño margen al texto */
     }
 
     /* Hacer que los elementos del footer estén alineados de forma más sencilla */
@@ -625,37 +626,38 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center; /* Alinear los elementos al centro */
     }
 
     footer .ps-5 {
         padding-left: 0;  /* Eliminar el padding a la izquierda en pantallas pequeñas */
     }
 
-    /* Hacer que las redes sociales se alineen en fila */
+    /* Ajustar los márgenes y espaciados entre los elementos */
     footer .col-6 {
         text-align: center;
-        margin-top: 15px;
+        margin-top: 5px; /* Reducir margen entre elementos */
     }
 
     footer .col-6 a {
-        margin: 0 10px;  /* Espaciado entre los íconos de redes sociales */
+        margin: 0 8px;  /* Reducir el espaciado entre los íconos */
     }
 
     /* Ajustar el texto de copyright y creador */
     footer .d-flex.justify-content-center {
-        margin-top: 10px;
-        font-size: 0.9rem;
+        margin-top: 5px; /* Reducir el margen superior */
+        font-size: 0.8rem; /* Reducir el tamaño de la fuente para hacerlo más compacto */
     }
 
     footer .text {
-        font-size: 0.8rem; /* Reducir el tamaño de texto para "Creado por Xdeghost" */
+        font-size: 0.7rem; /* Reducir aún más el tamaño de texto para "Creado por Xdeghost" */
         text-align: center;
         margin-top: 5px;
     }
 
     /* Estilizar los enlaces de las redes sociales */
     footer .col-6 a img {
-        width: 30px; /* Reducir el tamaño de los íconos de redes sociales */
+        width: 25px; /* Reducir aún más el tamaño de los íconos de redes sociales */
         height: auto;
     }
 }
@@ -663,10 +665,11 @@ footer {
 /* Ajustes para tabletas y pantallas medianas */
 @media (min-width: 768px) and (max-width: 991px) {
     footer .logo {
-        width: 80px;
+        width: 70px;  /* Hacer el logo más pequeño también en tabletas */
     }
 
     footer h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
+
