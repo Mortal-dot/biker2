@@ -657,8 +657,17 @@ footer {
 
     /* Estilizar los enlaces de las redes sociales */
     footer .col-6 a img {
-        width: 25px; /* Reducir aún más el tamaño de los íconos de redes sociales */
+        width: 30px; /* Reducir el tamaño de los íconos de redes sociales */
         height: auto;
+        background: transparent; /* Quitar el fondo negro de los íconos */
+        border-radius: 50%; /* Hacer los íconos circulares si tienen fondo */
+    }
+
+    /* Asegurarnos de que los íconos estén centrados correctamente */
+    footer .col-6 {
+        display: flex;
+        justify-content: center; /* Centrar los íconos de redes sociales */
+        align-items: center;
     }
 }
 
